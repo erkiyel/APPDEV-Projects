@@ -69,3 +69,32 @@ btn4.addEventListener("click", () => {
     The convertion to Fahrenheit would be ${Convert}.`
     document.getElementById("output5").innerHTML = x
 })
+//This is the component for the Sixth item
+btn5 = document.getElementById("btn5")
+//for displaying the information
+btn5.addEventListener("click", () => {
+    //create and initialize our variables
+    let CookiesEaten = document.getElementById("CookiesEaten").value
+    let typeCastCookies = parseFloat(CookiesEaten)
+    let Calories = (CookiesEaten / 40) *10 *300
+    let x = `Hello! You have entered ${CookiesEaten} for <br>
+    the numbers of cookies eaten, <br>
+    this will convert to ${Calories} calories.`
+    document.getElementById("output6").innerHTML = x
+})
+//This is the component for the Seventh item
+btn6 = document.getElementById("btn6")
+//for displaying the information
+btn6.addEventListener("click", () => {
+    //create and initialize our variables
+    let NumberOfMales = parseFloat(document.getElementById("NumberOfMales").value)
+    let NumberOfFemales = parseFloat(document.getElementById("NumberOfFemales").value)
+    let add = NumberOfMales + NumberOfFemales
+    let aveMale = (NumberOfMales / add * 100)
+    let aveFemale = (NumberOfFemales / add * 100)
+
+    let x = `Hello! You have entered ${NumberOfMales} for the number of males in the class <br>
+    and ${NumberOfFemales} for the number of females. The average for males would be ${aveMale}% and <br>
+    ${aveFemale}% for the average of the females in this class.`
+    document.getElementById("output7").innerHTML = x
+})

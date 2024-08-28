@@ -18,7 +18,12 @@ btns.forEach((btn) => {
         }else if(styles.contains('dec')){
             count -= 5
         }else if(styles.contains('random')){
-            count = Math.floor(Math.random() * 100)
+            if(count > 0){
+                count = Math.floor(Math.random() * -100)
+            }
+            else{
+                count = Math.floor(Math.random() * 100)
+            }
         }else{
             count = 0
         }
