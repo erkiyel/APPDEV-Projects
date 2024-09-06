@@ -1,0 +1,84 @@
+body{ 
+    background-image: url(BACKGROUND.jpg); 
+    margin: 0; 
+    padding: 0; 
+    align-items: center; 
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Times New Roman', Times, serif; 
+    overflow: hidden; 
+} 
+.profile{ 
+    display: flex; 
+    align-items: center; 
+    margin: 50px; 
+} 
+.profilepic{ 
+    width: 300px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin: 0px 30px; 
+} 
+.name{ 
+    flex-direction: column; 
+    align-items: first baseline; 
+    margin-left: 1px; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 70px; 
+} 
+.container{ 
+    width: 100%; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    background-color: #013220; 
+} 
+button:hover { 
+    background-color: #90e0ef; 
+    transition: .3s ease all; 
+    transform: translateY(-10px); 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 18px; 
+} 
+.me{ 
+    background-color: #a3b18a; 
+    transition: .3s ease all; 
+    border: none; 
+    width: 120px; 
+    height: 45px; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 18px; 
+    align-items: flex-start; 
+    margin-left: 10px; 
+} 
+.socmed{ 
+    background-color: #a3b18a; 
+    transition: .3s ease all; 
+    border: none; 
+    width: 120px; 
+    height: 45px; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 18px; 
+    align-items: flex-start;   
+    margin-left: 20px; 
+} 
+.socmed{ 
+    background-color: #a3b18a; 
+    transition: .3s ease all; 
+    border: none; 
+    width: 120px; 
+    height: 45px; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 18px; 
+    align-items: flex-start;   
+    margin-left: 20px; 
+} 
+.footer{ 
+    width: 100%; 
+    padding: 20px; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: #013220; 
+}

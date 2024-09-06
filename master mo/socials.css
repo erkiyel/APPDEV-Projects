@@ -1,0 +1,101 @@
+body{
+    background-image: url(BACKGROUND.jpg);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+.profilepic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.name{
+    margin-left: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+button:hover {
+    background-color: #90e0ef;
+    transition: .3s ease all;
+    transform: translateY(-15px);
+}
+.fb{
+    background-color: #a3b18a;
+    transition: .3s ease all;
+    border: none;
+    width: 190px;
+    height: 190px;    
+}
+.ig{
+    background-color: #a3b18a;
+    transition: .3s ease all;
+    border: none;
+    width: 190px;
+    height: 190px;    
+}
+.threads{
+    background-color: #a3b18a;
+    transition: .3s ease all;
+    border: none;
+    width: 190px;
+    height: 190px;    
+}
+.snap{
+    background-color: #a3b18a;
+    transition: .3s ease all;
+    border: none;
+    width: 190px;
+    height: 190px; 
+}
+.tg{
+    background-color: #a3b18a;
+    transition: .3s ease all;
+    border: none;
+    width: 190px;
+    height: 190px;  
+}
+.FB{
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px; 
+}
+.IG{
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px; 
+}
+.TS{
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px; 
+}
+.SP{
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px; 
+}
+.TG{
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 190px; 
+}
