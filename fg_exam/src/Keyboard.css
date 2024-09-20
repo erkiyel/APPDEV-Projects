@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+    color: black;
+    list-style: none;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: #d5d8d7;
+    
+}
+img {
+    width: 250px;
+    height: auto;
+}
