@@ -1,8 +1,7 @@
-//this is my header component
 export default function Header () {
-    return(
+    return (
         <header>
-            <h1>My Website</h1>
+            <h1><center>My Website</center></h1>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
