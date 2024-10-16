@@ -1,4 +1,5 @@
 import React from 'react';
+import POKEBALL from './assets/Images/POKEBALL.png';
 import GRASS from './assets/Images/GRASS.png';
 import FIRE from './assets/Images/FIRE.png';
 import WATER from './assets/Images/WATER.png';
@@ -10,7 +11,6 @@ import FLYING from './assets/Images/FLYING.png';
 import BUG from './assets/Images/BUG.png';
 import ROCK from './assets/Images/ROCK.png';
 import GHOST from './assets/Images/GHOST.png';
-import DARK from './assets/Images/DARK.png';
 import FAIRY from './assets/Images/FAIRY.png';
 import NORMAL from './assets/Images/NORMAL.png';
 import FIGHTING from './assets/Images/FIGHTING.png';
@@ -18,6 +18,7 @@ import POISON from './assets/Images/POISON.png';
 import STEEL from './assets/Images/STEEL.png';
 
 const typeImages = {
+    pokeball: POKEBALL,
     grass: GRASS,
     fire: FIRE,
     water: WATER,
@@ -29,7 +30,6 @@ const typeImages = {
     bug: BUG,
     rock: ROCK,
     ghost: GHOST,
-    dark: DARK,
     fairy: FAIRY,
     normal: NORMAL,
     fighting: FIGHTING,
@@ -48,7 +48,7 @@ const Header = ({ searchTerm, setSearchTerm, sortOrder, setSortOrder, setSelecte
                         src={typeImages[type]} 
                         alt={type} 
                         className="type-image" 
-                        onClick={() => setSelectedType(type)}
+                        onClick={() => setSelectedType(type === 'pokeball' ? '' : type)} 
                     />
                 ))}
             </div>

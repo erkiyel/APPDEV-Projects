@@ -1,32 +1,44 @@
+@import url('https://fonts.cdnfonts.com/css/nintendo-ds-bios');
+
+body {
+    font-family: 'Nintendo DS BIOS', sans-serif;
+    margin: 0; 
+}
+
 .pokedex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-image: url('../src/assets/Images/background.gif');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 40px;
+    min-height: 100vh;
 }
-
 .header-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    background-color: rgb(236, 39, 39); 
+    padding: 20px; 
 }
 
 .title {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 4em;
+    color: rgb(0, 0, 0); 
+    margin-bottom: 20px;
 }
 
 .type-images-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .type-image {
-    width: 80px; /* Adjust size as needed */
-    height: 80px; /* Adjust size as needed */
-    margin: 0 5px;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -38,43 +50,72 @@
 .controls-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .search-input {
-    padding: 10px;
+    padding: 5px;
     margin-right: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 4px;
+    font-size: 1.4em;
+    width: 350px;
+    font-family: 'Nintendo DS BIOS', sans-serif;
 }
-
+.dropdown{
+    font-family: 'Nintendo DS BIOS', sans-serif;
+    font-size: 1.4em;
+}
 .pokemon-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
+    justify-content: center; 
 }
 
 .pokemon-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s;
+    color: black;
+    position: relative;
+    animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 .pokemon-card:hover {
     transform: scale(1.05);
 }
 
-.id {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #555;
+.pokemon-card img {
+    width: 150px;
+    height: auto;
 }
+
+.pokemon-card.fire { background-color: #FF8C00; }
+.pokemon-card.water { background-color: #1E90FF; }
+.pokemon-card.grass { background-color: #32CD32; }
+.pokemon-card.electric { background-color: #FFD700; }
+.pokemon-card.rock { background-color: #A52A2A; }
+.pokemon-card.ice { background-color: #ADD8E6; }
+.pokemon-card.psychic { background-color: #DDA0DD; }
+.pokemon-card.fighting { background-color: #B22222; }
+.pokemon-card.bug { background-color: #8FBC8F; }
+.pokemon-card.ghost { background-color: #800080; }
+.pokemon-card.dragon { background-color: #8A2BE2; }
 
 .modal {
     position: fixed;
@@ -82,41 +123,47 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
     position: relative;
+    text-align: center;
 }
 
 .close-button {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 20px;
     cursor: pointer;
+    font-size: 2.5em;
+    color: black;
+}
+
+.pokemon-details {
+    margin-top: 20px;
     font-size: 1.5em;
 }
 
-.load-more-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.pokemon-name {
+    font-size: 2em;
+    margin-top: 10px;
 }
 
-.load-more-button:hover {
-    background-color: #45a049;
+.id {
+    font-size: 2em;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+div.app-container {
+    background-color: rgb(0, 0, 0); 
 }
