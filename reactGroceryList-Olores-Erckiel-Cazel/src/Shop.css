@@ -1,0 +1,43 @@
+.shop-container {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.item-container {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 0 10px;
+}
+
+.available-items {
+    background-image: url(./assets/ShoppingCart.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-summary {
+    background-image: url(./assets/Cashier.png);
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout {
+    background-image: url(./assets/Payment.png);
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.receipt {
+    background-image: url(./assets/checkout.png);
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
