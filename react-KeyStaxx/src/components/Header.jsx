@@ -6,10 +6,10 @@ const Header = () => {
     <header>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/showcase">Showcase</Link>
-        <Link to="/products">Products</Link>
-        <Link to="/reviews">Reviews</Link>
-        <Link to="/developers">Developer</Link>
+        <Link to="/Company_Profile">Company Profile</Link>
+        <Link to="/Products">Products</Link>
+        <Link to="/Reviews">Reviews</Link>
+        <Link to="/Developers">Developer</Link>
       </nav>
     </header>
   );
