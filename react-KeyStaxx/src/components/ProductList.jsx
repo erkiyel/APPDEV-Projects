@@ -9,6 +9,7 @@ import white60 from '../assets/60white.png';
 import animesukuna from '../assets/animesukuna.png';
 import animechainsawman from '../assets/animechainsawman.png';
 import animeahe from '../assets/animeahe.png';
+import './ProductList.css';
 
 const ProductPage = () => {
   const categories = [

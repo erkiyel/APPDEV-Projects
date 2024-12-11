@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,18 +6,17 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #F1EBE3; /* Light Cream */
-  color: #3E4264; /* Dark Blue */
+  background-color: #F1EBE3;
+  color: #3E4264;
   padding: 0;
-  background-image: url('https://tenor.com/view/bongo-cat-typing-keyboard-smash-gif-17773853'); /* Background GIF */
+  background-image: url('https://tenor.com/view/bongo-cat-typing-keyboard-smash-gif-17773853');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* Header Styles */
 header {
-  background-color: #3E4264; /* Dark Blue */
+  background-color: #3E4264;
   color: white;
   padding: 15px 0;
   text-align: center;
@@ -39,18 +37,9 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #BACEBB; /* Light Blue */
+  color: #BACEBB;
 }
 
-/* General Card Styles */
-.card {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Home Page Styles */
 .home {
   padding: 3rem 2rem;
   text-align: center;
@@ -60,7 +49,7 @@ header nav a:hover {
 
 .home h2 {
   font-size: 2.5rem;
-  color: #3E4264; /* Dark Blue */
+  color: #3E4264;
   margin-bottom: 1rem;
 }
 
@@ -89,121 +78,24 @@ header nav a:hover {
   line-height: 1.6;
 }
 
-/* Product Page Styles */
-.product-page {
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-}
-
-.categories {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.category {
-  background: #F1EBD3;
-  padding: 1.5rem;
-  border-radius: 10px;
-}
-
-.category h3 {
-  font-size: 1.8rem;
-  color: #3E4264;
-}
-
-.products {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.product-card h4 {
-  margin: 1rem 0 0.5rem;
-  color: #3E4264;
-}
-
-.view-manual {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #3E4264;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.view-manual:hover {
-  background: #BACEBB;
-}
-
-/* Product Manual Styles */
-.product-manual {
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-manual img {
-  width: 80%;
-  margin: 1rem 0;
-  border-radius: 10px;
-}
-
-.back-link {
-  display: block;
-  margin-top: 1rem;
-  color: #3E4264;
-  text-decoration: underline;
-}
-
-/* Review Page Styles */
-.review-page {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.review-page textarea {
-  width: 80%;
-  height: 150px;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  resize: none;
-}
-
-.review-page button {
-  padding: 0.8rem 2rem;
-  background-color: #3E4264;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.review-page button:hover {
+.toggle-showcase-button {
   background-color: #BACEBB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
 }
 
-/* Footer Styles */
+.toggle-showcase-button:hover {
+  background-color: #568359;
+}
+
+
+
 footer {
   background-color: #3E4264;
   color: white;
@@ -218,19 +110,10 @@ footer p {
   font-size: 14px;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
   header nav {
     flex-direction: column;
     gap: 15px;
-  }
-
-  .products {
-    flex-direction: column;
-  }
-
-  .product-card {
-    width: 100%;
   }
 
   footer {

@@ -1,0 +1,22 @@
+.developer-page {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.developer-page button {
+    margin-top: 1rem;
+    background-color: #3E4264;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.developer-page button:hover {
+    background-color: #BACEBB;
+}

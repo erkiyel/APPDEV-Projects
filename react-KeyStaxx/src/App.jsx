@@ -10,6 +10,7 @@ import CompanyProfile from "./components/CompanyProfile";
 import DeveloperPage from "./components/DeveloperPage";
 import EmployeeResume from "./components/EmployeeResume";
 import ReviewPage from "./components/ReviewPage";
+import Showcase from "./components/Showcase"; 
 import "./App.css";
 
 const App = () => {
@@ -21,9 +22,10 @@ const App = () => {
         <Route path="/CompanyProfile" element={<CompanyProfile />} />
         <Route path="/products" element={<ProductList />} />
         <Route path="/product/:productId" element={<ProductManual />} />
-        <Route path="/profile/:employeeId" element={<EmployeeResume />} />
+        <Route path="/employee/:employeeId" element={<EmployeeResume />} />
         <Route path="/developers" element={<DeveloperPage />} />
         <Route path="/reviews" element={<ReviewPage />} />
+        <Route path="/showcase" element={<Showcase />} />
       </Routes>
       <Footer />
     </Router>

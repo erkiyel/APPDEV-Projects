@@ -1,12 +1,19 @@
-// src/components/ReviewPage.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import "./ReviewPage.css";
 
 const ReviewPage = () => {
   const [review, setReview] = useState("");
   const [reviews, setReviews] = useState([
-    "Great products, really improved my productivity!",
-    "Love the design and feel of my new keyboard.",
+    "Amazing product! My typing speed has greatly improved.",
+    "The build quality is fantastic, highly recommend!"
   ]);
+
+  useEffect(() => {
+    const savedReviews = JSON.parse(localStorage.getItem("reviews"));
+    if (savedReviews) {
+      setReviews(savedReviews);
+    }
+  }, []);
 
   const handleReviewChange = (e) => {
     setReview(e.target.value);
@@ -14,8 +21,10 @@ const ReviewPage = () => {
 
   const handleSubmit = () => {
     if (review) {
-      setReviews([...reviews, review]);
-      setReview("");  // Clear the textarea after submission
+      const updatedReviews = [...reviews, review];
+      setReviews(updatedReviews);
+      setReview("");
+      localStorage.setItem("reviews", JSON.stringify(updatedReviews));
     }
   };
 

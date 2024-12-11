@@ -1,21 +1,42 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./CompanyProfile.css";
 
 const employees = [
-  { id: 1, name: "John Doe", position: "CEO" },
-  { id: 2, name: "Jane Smith", position: "Designer" },
+  { id: 1, name: "Erckiel Cazel P. Olores", position: "CEO", parent: null },
+  { id: 2, name: "Erckiel Cazel P. Olores", position: "Designer", parent: 1 },
+  { id: 3, name: "Erckiel Cazel P. Olores", position: "Marketing Manager", parent: 1 },
+  { id: 4, name: "Erckiel Cazel P. Olores", position: "Sales Lead", parent: 3 },
+  { id: 5, name: "Erckiel Cazel P. Olores", position: "Product Manager", parent: 1 },
+  { id: 6, name: "Erckiel Cazel P. Olores", position: "Lead Developer", parent: 5 },
 ];
 
+const createTree = (employees, parent) =>
+  employees
+    .filter((emp) => emp.parent === parent)
+    .map((emp) => ({
+      ...emp,
+      children: createTree(employees, emp.id),
+    }));
+
+const renderTree = (nodes) =>
+  nodes.map((node) => (
+    <li key={node.id}>
+      <div className="employee">
+        <h3>{node.name}</h3>
+        <p>{node.position}</p>
+      </div>
+      {node.children.length > 0 && (
+        <ul className="subtree">{renderTree(node.children)}</ul>
+      )}
+    </li>
+  ));
+
 const CompanyProfile = () => {
+  const employeeTree = createTree(employees, null);
   return (
     <div className="company-profile">
-      <h2>Our Team</h2>
-      {employees.map((emp) => (
-        <Link key={emp.id} to={`/profile/${emp.id}`} className="employee">
-          <h3>{emp.name}</h3>
-          <p>{emp.position}</p>
-        </Link>
-      ))}
+      <h1>Company Profile</h1>
+      <ul className="tree">{renderTree(employeeTree)}</ul>
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.showcase h2 {
+  color: #3E4264;
+  padding: 1rem;
+}
+  
+.showcase p {
+  font-style: italic;
+  color: #555;
+  padding: 1rem;
+}
+
+.showcase {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #BACEBB;
+  border-radius: 8px;
+}
