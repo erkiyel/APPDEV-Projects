@@ -6,6 +6,7 @@ import purple from '../assets/purple.png';
 import black60 from '../assets/60black.png';
 import pink60 from '../assets/60pink.png';
 import white60 from '../assets/60white.png';
+import orange60 from '../assets/60orange.png';
 import animesukuna from '../assets/animesukuna.png';
 import animechainsawman from '../assets/animechainsawman.png';
 import animeahe from '../assets/animeahe.png';
@@ -56,6 +57,12 @@ const ProductPage = () => {
           name: '60% White Judgement',
           image: white60,
           description: 'Minimalist design with vibrant rgb lights.',
+        },
+        {
+          id: 7,
+          name: '60% Formal Orange',
+          image: orange60,
+          description: 'Minimalist design with vibrant orange.',
         },
       ],
     },
